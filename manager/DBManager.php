@@ -6,8 +6,8 @@
             try {
                 $this->mysql = new PDO(
                     'mysql:host=localhost;dbname=todo;charset=utf8',
-                    'root',
-                    'root'
+                    'mysql_username',
+                    'mysql_password'
                 );
             }catch(PDOException $e){
                 die("Error: " .  $e->getMessage());
