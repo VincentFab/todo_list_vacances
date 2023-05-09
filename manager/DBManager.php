@@ -7,7 +7,7 @@
                 $this->mysql = new PDO(
                     'mysql:host=localhost;dbname=todo;charset=utf8',
                     'root',
-                    'marvel'
+                    'root'
                 );
             }catch(PDOException $e){
                 die("Error: " .  $e->getMessage());
